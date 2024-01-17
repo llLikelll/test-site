@@ -1,0 +1,38 @@
+header {
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		background-color: $dark;
+		height: 0%;
+		z-index: -1;
+		@include transition(all .5s ease-in-out);
+	}
+
+	.navbar {
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					--bs-nav-link-font-size: 1.125rem;
+					@include link-underline-anim($primary, 1px, var(--bs-navbar-nav-link-padding-x), var(--bs-nav-link-padding-y));
+
+					@include media-breakpoint-down(lg) {
+						--bs-navbar-nav-link-padding-x: 0rem;
+						--bs-nav-link-color: #{$dark};
+					}
+				}
+			}
+		}
+	}
+
+	&.header-collapsed {
+		&:before {
+			height: 100%;
+			box-shadow: $box-shadow;
+		}
+	}
+}

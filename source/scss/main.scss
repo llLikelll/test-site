@@ -1,0 +1,174 @@
+@import "fonts";
+@import "bootstrap";
+
+@import "node_modules/swiper/swiper";
+@import "node_modules/swiper/modules/navigation";
+@import "node_modules/swiper/modules/pagination";
+@import "node_modules/swiper/modules/free-mode";
+@import "node_modules/swiper/modules/grid";
+
+@import "mixins";
+@import "colored-links";
+@import "welcome";
+@import "header";
+
+.icon {
+    --icon-width: 1em;
+    --icon-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+a {
+    text-underline-offset: .25em;
+}
+
+.letter-spacing-96 {
+    letter-spacing: 0.96px;
+}
+
+.popular-location-item {
+    --popular-location-item-border-radius: #{$border-radius-lg};
+    position: relative;
+    border-radius: var(--popular-location-item-border-radius);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include transition();
+
+    .item-image {
+        border-top-right-radius: var(--popular-location-item-border-radius);
+        border-top-left-radius: var(--popular-location-item-border-radius);
+    }
+    .item-content {
+        padding: 2rem 1.5rem;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-color: rgba($black, 0.1);
+        border-bottom-right-radius: var(--popular-location-item-border-radius);
+        border-bottom-left-radius: var(--popular-location-item-border-radius);
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
+.offer-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    .item-image {
+        border-radius: $border-radius-lg;
+    }
+}
+
+.offers-slider {
+    .swiper {
+        .slider-footer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .swiper-pagination {
+                position: static;
+                width: auto;
+
+                @include media-breakpoint-up(md) {
+                    --swiper-pagination-bullet-width: 4.6875rem;
+                    --swiper-pagination-bullet-height: 0.3125rem;
+                    --swiper-pagination-bullet-border-radius: #{$border-radius-pill};
+                }
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+                position: static;
+                width: auto;
+                height: auto;
+                margin-top: 0;
+                font-size: 1rem;
+
+                &:after {
+                    content: none;
+                }
+
+                .icon {
+                    width: var(--icon-width);
+                    height: var(--icon-height);
+                }
+            }
+        }
+    }
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5rem;
+
+    @include media-breakpoint-up(xxl) {
+        grid-gap: 2rem;
+    }
+
+    .article-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        grid-column: span 12;
+
+        .item-image {
+            width: 100%;
+            border-radius: $border-radius-lg;
+        }
+
+        .item-content {
+            .item-desc {
+                color: $secondary;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.125rem;
+                    color: $secondary;
+                }
+            }
+
+            .item-author {
+                font-weight: 500;
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            grid-column: span 6;
+
+            &:first-child {
+                grid-row: span 3;
+            }
+
+            &:not(:first-child) {
+                flex-direction: row;
+                align-items: center;
+
+                .item-image-container {
+                    flex: 1 0 0%;
+                }
+
+                .item-content {
+                    flex: 1 0 0%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.welcome {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url("../images/welcome-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+
+  .welcome-desc {
+    font-size: 1.125rem;
+    color: rgba($white, 0.6);
+  }
+
+  @include media-breakpoint-up(xl) {
+    min-height: 900px;
+  }
+}

@@ -1,0 +1,12 @@
+@each $color, $value in $link-colors {
+  @each $color-hover, $value-hover in $link-colors {
+    @if $color != $color-hover {
+      .link-#{$color}-#{$color-hover} {
+        @include just-link($value, $value-hover);
+      }
+      .link-#{$color}-#{$color-hover}-underline {
+        @include just-underline-link($value, $value-hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@mixin just-link($color: $body-color, $hover-color: $primary) {
+    color: $color;
+    text-decoration: none;
+    @include transition();
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+@mixin just-underline-link($color: $body-color, $hover-color: $primary) {
+    color: $color;
+    text-decoration: underline;
+    @include transition();
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+@mixin link-underline-anim($anim-color: $primary, $line-height: 1px, $line-offset-x: 0px, $line-offset-bottom: 0px) {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: $line-offset-bottom;
+        width: 0%;
+        height: $line-height;
+        margin-right: $line-offset-x;
+        margin-left: $line-offset-x;
+        background-color: $anim-color;
+        @include transition();
+    }
+
+    &:hover, &.active {
+        &:before {
+            width: calc(100% - ($line-offset-x * 2));
+            left: 0;
+        }
+    }
+}

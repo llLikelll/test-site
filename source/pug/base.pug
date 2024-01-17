@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        meta(name="msapplication-TileColor" content="#ffffff")
+        meta(name="theme-color" content="#ffffff")
+        title Traveland - travel with us
+        meta(name="keywords" content="lorem, ipsum, consectetur, adipiscing, cras")
+        meta(name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida risus vel cursus rutrum.")
+
+        meta(property="og:title" content="Traveland - travel with us")
+        meta(property="og:site_name" content="Traveland")
+        meta(property="og:url" content="https://lllikelll.github.io/test-site/")
+        meta(property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida risus vel cursus rutrum.")
+        meta(property="og:image" content="https://lllikelll.github.io/test-site/icons/og-image.jpg")
+
+
+        link(rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png")
+        link(rel="shortcut icon" type="image/png" href="icons/favicon.ico")
+        link(rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#c9453b")
+
+        link(rel="stylesheet" href="assets/css/main.min.css")
+    body.d-flex.flex-column.min-vh-100
+        header.js-header.fixed-top
+            nav.navbar.navbar-expand-lg
+                div.container-xl.flex-nowrap
+                    a.navbar-brand(href="#")
+                        img.img-fluid(src="assets/images/logo-white.svg" width="124" height="19" alt="Логотип")
+                    button.navbar-toggler.order-1.ms-2.ms-sm-3(type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Меню")
+                        span.navbar-toggler-icon
+                    div.offcanvas.offcanvas-end(tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel")
+                        div.offcanvas-header
+                            div.h3.fw-bold.mb-0(id="offcanvasNavbarLabel") Меню
+                            button.btn.btn-close.text-reset(data-bs-dismiss="offcanvas" aria-label="Close")
+                        div.offcanvas-body
+                            div.d-lg-none
+                                div.d-flex.justify-content-center
+                                    a(href="#")
+                                        img.img-fluid(src="assets/images/logo-dark.svg" width="124" height="19" alt="Логотип" loading="lazy")
+                                hr.opacity-100.mt-4
+                            ul.navbar-nav.mx-auto.mb-0
+                                li.nav-item
+                                    a.nav-link(href="#") Home
+                                li.nav-item
+                                    a.nav-link(href="#") Location
+                                li.nav-item
+                                    a.nav-link(href="#") Blog
+                                li.nav-item
+                                    a.nav-link(href="#") About
+                                li.nav-item
+                                    a.nav-link(href="#") Contact
+                    div.d-none.d-sm-block.ms-auto
+                        button.btn.btn-primary Booking now
+
+        main.flex-grow-1
+            block main
+
+        footer.bg-light.letter-spacing-96.py-72
+            div.container
+                div.row.gy-4
+                    div.col-xl-3
+                        div.mb-5
+                            a(href="#")
+                                img.img-fluid(src="assets/images/logo-dark.svg" width="124" height="19" alt="Логотип" loading="lazy")
+                        div.lh-sm.mb-20
+                            div.mb-3 Contact us
+                            div
+                                a.link-dark-primary(href="#") @shovasatkhira88.com
+                        div.d-flex.gap-27
+                            div
+                                a(href="#")
+                                    img(src="assets/images/icons/facebook-colored.svg" width="20" height="20" alt="Facebook" loading="lazy")
+                            div
+                                a(href="#")
+                                    img(src="assets/images/icons/instagram-colored.svg" width="20" height="20" alt="Instagram" loading="lazy")
+                            div
+                                a(href="#")
+                                    img(src="assets/images/icons/twitter-colored.svg" width="20" height="20" alt="Twitter" loading="lazy")
+                            div
+                                a(href="#")
+                                    img(src="assets/images/icons/google-colored.svg" width="20" height="20" alt="Google" loading="lazy")
+                    div.col-6.col-md-4.col-xl-2
+                        div.d-flex.flex-column.fw-medium.gap-3
+                            a.link-dark-primary(href="#") Services
+                            a.link-dark-primary(href="#") About
+                            a.link-dark-primary(href="#") Our story
+                            a.link-dark-primary(href="#") Benefits
+                            a.link-dark-primary(href="#") Branding
+                    div.col-6.col-md-4.col-xl-2
+                        div.d-flex.flex-column.fw-medium.gap-3
+                            a.link-dark-primary(href="#") Legal
+                            a.link-dark-primary(href="#") Terms & Conditions
+                            a.link-dark-primary(href="#") Privacy Policy
+                            a.link-dark-primary(href="#") Terms of use
+                    div.col-lg-4.offset-xl-1
+                        div.fs-5.fw-medium.text-uppercase.mb-3.mb-xl-35 Subscribe now
+                        form.d-flex.gap-4
+                            div
+                                input.form-control.bg-transparent(type="email" name="email" placeholder="Email")
+                            button.btn.btn-sm.btn-primary Send
+
+        script(src="assets/js/vendors.min.js")
+        script(src="assets/js/main.min.js")

@@ -1,0 +1,225 @@
+extends base.pug
+
+block main
+    section.welcome.py-140
+        div.container-xl
+            h1.display-3.fw-bold.mb-4 Railtrips To Here, <br>There And Everywhere!
+            div.welcome-desc.mb-5 We all wish to start our year the best way possible and <br>also according to a common belief if you have a great <br>start to your.
+            button.btn.btn-primary Explore more
+    section.my-140
+        div.container-xl
+            div.row.justify-content-center.mb-5
+                div.col-lg-8.text-center
+                    h2.fs-1.lh-140.mb-4 Popular Location
+                    div.text-secondary.fs-18.lh-160 For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and <br>voyagers— from island hopping in the
+            div.row.row-cols-1.row-cols-sm-2.row-cols-lg-3.gy-4
+                div.col
+                    div.popular-location-item
+                        div
+                            img.item-image.img-fluid(src="assets/images/popular-location-1.webp" alt="" width="551" height="507" loading="lazy")
+                        div.item-content.lh-160
+                            div.mb-3
+                                a.h4.link-dark-primary.stretched-link(href="#") Istanbul, Turkey
+                            div.text-secondary.fs-18 Istanbul is a major city in Turkey that straddles Europe.
+                div.col
+                    div.popular-location-item
+                        div
+                            img.item-image.img-fluid(src="assets/images/popular-location-2.webp" alt="" width="551" height="507" loading="lazy")
+                        div.item-content.lh-160
+                            div.mb-3
+                                a.h4.link-dark-primary.stretched-link(href="#") Kuala Lumpur, malaysia
+                            div.text-secondary.fs-18 A 272-step long trek leads you to this century.
+                div.col
+                    div.popular-location-item
+                        div
+                            img.item-image.img-fluid(src="assets/images/popular-location-3.webp" alt="" width="551" height="507" loading="lazy")
+                        div.item-content.lh-160
+                            div.mb-3
+                                a.h4.link-dark-primary.stretched-link(href="#") Seoul, South Korea
+                            div.text-secondary.fs-18 South Korea officially the Republic of Korea is a country in East Asia.
+    section.my-140
+        div.container-xl
+            div.row.justify-content-center.mb-60
+                div.col-lg-8.text-center
+                    h2.fs-1.lh-140.mb-4 Special Offers
+                    div.text-secondary.fs-18.lh-160 With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates.
+        div.offers-slider
+            div.swiper
+                div.swiper-wrapper
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-1.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") Statue of Liberty.
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary New York
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.8
+                                div.text-secondary.mb-2 4 Day 5 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$450</span>/person
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-2.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") The Great Wall
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary China
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.9
+                                div.text-secondary.mb-2 7 Day 8 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$850</span>/person
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-3.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") Dizin
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary Iran
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.6
+                                div.text-secondary.mb-2 5 Day 6 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$550</span>/person
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-4.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") Sajek Valley
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary Bangladesh
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.7
+                                div.text-secondary.mb-2 3 Day 4 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$400</span>/person
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-5.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") Osaka Castle
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary Japan
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.7
+                                div.text-secondary.mb-2 4 Day 5 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$700</span>/person
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-1.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") Statue of Liberty.
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary New York
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.8
+                                div.text-secondary.mb-2 4 Day 5 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$450</span>/person
+                    div.swiper-slide
+                        div.offer-item
+                            div
+                                img.item-image.img-fluid(src="assets/images/offer-2.webp" alt="" width="522" height="346" loading="lazy")
+                            div
+                                div.mb-2
+                                    a.h4.link-dark-primary(href="#") The Great Wall
+                                div.d-flex.align-items-center.gap-5.mb-2
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon
+                                            use(xlink:href="assets/icons/sprite.svg#location")
+                                        div.fs-5.lh-1.text-secondary China
+                                    div.d-flex.align-items-center.gap-2
+                                        svg.icon.fs-4
+                                            use(xlink:href="assets/icons/sprite.svg#star")
+                                        div.fs-18.lh-1 4.9
+                                div.text-secondary.mb-2 7 Day 8 Nights
+                                div.text-secondary <span class="fs-18 text-dark fw-medium">$850</span>/person
+                div.slider-footer.mt-5
+                    div.swiper-button-prev
+                        svg.icon
+                            use(xlink:href="assets/icons/sprite.svg#arrows-left")
+                    div.swiper-pagination
+                    div.swiper-button-next
+                        svg.icon
+                            use(xlink:href="assets/icons/sprite.svg#arrows-right")
+    section.my-140
+        div.container-xl
+            div.row.justify-content-center.mb-5
+                div.col-lg-8.text-center
+                    h2.fs-1.lh-140.mb-4 From Blog & News
+                    div.text-secondary.fs-18.lh-160 Welcome to Community Conversations, a new interview series featuring Intrepid travellers, creatives and activists in our community.
+            div.articles-grid.lh-160
+                article.article-item.gap-xxl-35
+                    div.item-image-container
+                        img.item-image.img-fluid(src="assets/images/article-1.webp" alt="" width="743" height="532" loading="lazy")
+                    div.item-content
+                        div.mb-2.mb-xxl-3
+                            a.link-dark-primary.lh-160(href="#")
+                                h3.h5 Banff National Park
+                        div.item-desc.mb-2 Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery. <br>Turquoise-colored lakes, snow-capped peaks, and glaciers are all easily accessible
+                        div.item-author @thomasalva_adison
+                article.article-item
+                    div.item-image-container
+                        img.item-image.img-fluid(src="assets/images/article-2.webp" alt="" width="743" height="568" loading="lazy")
+                    div.item-content
+                        div.mb-2.mb-xxl-3
+                            a.link-dark-primary.lh-160(href="#")
+                                h3.h5 The Hiroshima Peace!
+                        div.item-desc.mb-2 It was formally opened to the public in August that year.
+                        div.item-author @shova_bd88
+                article.article-item
+                    div.item-image-container
+                        img.item-image.img-fluid(src="assets/images/article-3.webp" alt="" width="743" height="568" loading="lazy")
+                    div.item-content
+                        div.mb-2.mb-xxl-3
+                            a.link-dark-primary.lh-160(href="#")
+                                h3.h5 The faithful prayers!
+                        div.item-desc.mb-2 A major pilgrimage center for Hindus, the holy city.
+                        div.item-author @adem/smith
+                article.article-item
+                    div.item-image-container
+                        img.item-image.img-fluid(src="assets/images/article-4.webp" alt="" width="743" height="568" loading="lazy")
+                    div.item-content
+                        div.mb-2.mb-xxl-3
+                            a.link-dark-primary.lh-160(href="#")
+                                h3.h5 Colourful waters!
+                        div.item-desc.mb-2 Forest-driven water and energy cycles are poorly.
+                        div.item-author @jhon7leew

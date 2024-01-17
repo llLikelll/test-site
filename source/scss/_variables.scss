@@ -1,0 +1,99 @@
+$primary: #C9453B;
+$secondary: #666;
+
+$black: #000000;
+$white: #ffffff;
+
+$light: #f6fbfb;
+$dark: $black;
+
+$themeColor: $primary;
+
+$link-colors: (
+	"primary": $primary,
+	"dark": $dark,
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1164px
+);
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+	1: $h1-font-size,
+	2: $h2-font-size,
+	3: $h3-font-size,
+	4: $h4-font-size,
+	5: $h5-font-size,
+	6: $h6-font-size,
+	12: $font-size-base * .75,
+	14: $font-size-base * .875,
+	18: $font-size-base * 1.125,
+	22: $font-size-base * 1.375,
+	64: $font-size-base * 4,
+);
+
+$spacer: 1rem;
+$negative-spacers: ();
+$enable-negative-margins: false;
+$spacers: (
+	0: 0,
+	1: $spacer * .25,
+	2: $spacer * .5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+	20: $spacer * 1.25,
+	27: $spacer * 1.75,
+	35: $spacer * 2.1875,
+	60: $spacer * 3.75,
+	72: $spacer * 4.5,
+	140: $spacer * 8.75,
+);
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+$border-radius: 0.3125rem;
+$border-radius-lg: 0.625rem;
+$btn-padding-x: 2.25rem;
+$btn-padding-y: 0.875rem;
+$btn-padding-x-sm: 2rem;
+$btn-padding-y-sm: 0.625rem;
+
+$btn-close-opacity: 1;
+
+$font-family-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: Gelasio, $font-family-sans-serif;
+
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-padding-y: .5rem;
+$navbar-brand-padding-y: 0;
+$navbar-brand-margin-end: 0;
+$navbar-light-toggler-border-color: rgba($white, .5);
+$navbar-light-color: $white;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-light-icon-color: $white;
+$navbar-toggler-focus-width: 0;
+$navbar-light-toggler-border-color: $white;
+$navbar-toggler-padding-x: 0.25rem;
+$navbar-toggler-padding-y: 0.125rem;
+
+$input-btn-focus-box-shadow: none;
+$input-padding-y: 0.625rem;
+$input-padding-x: 1.25rem;
+
+$line-heights: (
+	140: 1.4,
+	160: 1.6,
+);
